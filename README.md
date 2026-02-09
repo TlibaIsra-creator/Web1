@@ -13,8 +13,8 @@
         <h3><u>web development</u></h3>
     </center>
     <br>
-    <p><b>full name</b> Iatime Mohammed El Hadj</p>
-    <p><b>age</b>20 years old </p>
+    <p><b>full name</b> Tliba Isra</p>
+    <p><b>age</b>19 years old </p>
     <p><b>class</b> 2 <sup>nd</sup>LMD computer Science </p>
     <p><b>University</b> University of El OUAD</p>
 </body>
