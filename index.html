@@ -1,63 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Web Site</title>
+<!DOCTYPE html> 
+ <html lang ="en"> 
+ <head> 
+ <meta charset ="UTF -8"> 
+ <title>GPA Calculator</title> 
 
-    <style>
+ <link rel="stylesheet" href ="style.css"> 
 
-        /* توسيط العنوان */
-        h1 {
-            text-align: center;
-        }
+ <script src=" script .js"></script> 
 
-        /* Style 1 */
-        .style1 {
-            color: rgb(183, 2, 2);
-            text-align: center;
-        }
+ </head> 
 
-        /* Style 2 */
-        .style2 {
-            color: rgb(1, 139, 1);
-            font-size: 16px;       /* تكبير الحجم */
-            font-weight: bold;
-            font-family: Cambria;
-        }
+ <body> 
 
-        /* Style 3 */
-        .style3 {
-            font-size: 14px;       /* تكبير الحجم */
-            color: black;
-        }
+ <h1>GPA Calculator</h1> 
+ <form action ="calculate.php" method ="post" 
+ onsubmit ="return validateForm ();"> 
+ <div id="courses"> 
+ <div class ="course-row"> 
+ <label>Course:</label> 
+ <input type ="text" name ="course[]" 
+ placeholder ="e.g. Mathematics" required > 
 
-        /* فقرات النص */
-        p {
-            margin-bottom: 15px;   /* فراغ بين كل سطر */
-        }
+ <label>Credits:</label> 
 
-        /* Style 4 */
-        .style4 {
-            width: 250px;           /* تكبير الصورة */
-            height: 250px;          /* تكبير الصورة */
-            display: block;
-            margin: 20px auto;      /* الصورة في الوسط ورفعت للأعلى قليلاً */
-        }
+ <input type ="number" name ="credits[]" 
+ placeholder ="e.g. 3" min="1" required> 
 
-    </style>
-</head>
+ <label>Grade:</label> 
 
-<body>
+ <select name ="grade[]"> 
+ <option value ="4.0">A</option> 
+ <option value ="3.0">B</option> 
+ <option value ="2.0">C</option> 
+ <option value ="1.0">D</option> 
+ <option value ="0.0">F</option> 
+ </select> 
+ </div> 
+ </div> 
+ <button type ="button" onclick ="addCourse()"> 
+ + Add Course 
+ </button>
+  <br><br> 
+ <input type ="submit" value ="Calculate GPA"> 
 
-    <h1>Welcome to my Web Site</h1>
-
-    <h2 class="style1">Web Development (Lab1)</h2>
-
-    <p><span class="style2">Full name:</span> <span class="style3"> Tiba Isra</span></p>
-    <p><span class="style2">Age:</span> <span class="style3"> 19 years old</span></p>
-    <p><span class="style2">Class:</span> <span class="style3"> 2nd LMD Computer Science</span></p>
-    <p><span class="style2">University:</span> <span class="style3"> University of EL OUED</span></p>
-
-    <img src="image.jpg" class="style4">
-
-</body>
-</html>
+ </form> 
+ 
+ </body> 
+ </html>
